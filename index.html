@@ -6,8 +6,7 @@
     <title>VibeCoding Studio - 3-Panel Coding Interface</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-        <!-- Add Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 	
 	
 	<style>
@@ -313,86 +312,6 @@
 
 
 
- /* Banner styles */
-        .banner-container {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            z-index: 50;
-        }
-        @media (min-width: 768px) {
-            .banner-container {
-                bottom: 1.5rem;
-                right: 3rem;
-                width: auto;
-            }
-        }
-        .video-modal {
-            position: fixed;
-            inset: 0;
-            background-color: rgba(0,0,0,0.75);
-            z-index: 52;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-        }
-        .video-content {
-            position: relative;
-            width: 100%;
-            max-width: 56rem;
-            background-color: white;
-            border-radius: 0.5rem;
-            overflow: hidden;
-        }
-        .close-video-btn {
-            position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
-            z-index: 50;
-            color: white;
-            background-color: rgba(0,0,0,0.5);
-            border-radius: 9999px;
-            padding: 0.25rem;
-        }
-        .close-video-btn:hover {
-            background-color: rgba(0,0,0,0.75);
-        }
-        .banner-content {
-            background-color: #DF1783;
-            color: white;
-            font-size: 0.875rem;
-            padding: 0.75rem;
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-            display: flex;
-            justify-content: space-between;
-        }
-        @media (min-width: 768px) {
-            .banner-content {
-                border-radius: 0.5rem;
-            }
-        }
-        .banner-buttons {
-            display: inline-flex;
-            align-items: center;
-        }
-        .banner-btn {
-            font-weight: 500;
-            color: white;
-        }
-        .banner-btn:hover {
-            text-decoration: underline;
-        }
-        .close-banner-btn {
-            color: white;
-            padding-left: 0.5rem;
-            margin-left: 0.75rem;
-            border-left: 1px solid rgba(255,255,255,0.3);
-        }
-        .close-banner-btn:hover {
-            color: #e2e8f0;
-        }
 
 		
 
@@ -597,39 +516,6 @@ margin: 0px;
 
 
 
-<div class="banner-container" x-data="{ bannerOpen: true, videoOpen: false }" x-show="bannerOpen">
-    <div x-show="videoOpen" class="video-modal">
-        <div class="video-content">
-            <button class="close-video-btn" @click="videoOpen = false">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-            </button>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1" 
-                   frameborder="0" allowfullscreen class="w-full h-[300px] md:h-[500px]"></iframe>
-        </div>
-    </div>
-    <div class="banner-content">
-        <div class="text-white inline-flex items-center">
-            <img src="https://bucket.mlcdn.com/a/3336/3336910/images/2e79720ff0cbac4b6b430d701d053c11dfb48a79.gif" 
-                 class="w-5 h-5 mr-2" alt="Bebell Digital Solutions Logo">
-            <button class="banner-btn" @click="videoOpen = true">Watch Tutorial</button>
-            <span class="italic px-1.5">or</span>
-            <a class="banner-btn flex items-center" href="https://github.com/cruip/cruip-tutorials/blob/main/vertical-timelines/index.html" 
-               target="_blank" rel="noreferrer">
-                <span>Download</span>
-                <svg class="fill-white ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="9">
-                    <path d="m1.649 8.514-.91-.915 5.514-5.523H2.027l.01-1.258h6.388v6.394H7.158l.01-4.226z"/>
-                </svg>
-            </a>
-        </div>
-        <button class="close-banner-btn" @click="bannerOpen = false">
-            <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
-                <path d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z"/>
-            </svg>
-        </button>
-    </div>
-</div>
 
  
 
