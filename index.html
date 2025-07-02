@@ -27,7 +27,36 @@
         }
 
 
-     
+             
+    
+        .custom-image-widget {
+  position: fixed !important;
+  top: 100px !important; 
+  margin: 0 !important;
+  padding: 0 !important;
+    right: 0px; 
+        z-index: 999;
+}
+  
+    .custom-image {
+        width: 70px;
+        height: auto;
+       transition: transform 0.2s;
+    }
+    
+    
+      .custom-image-widget:hover .custom-image {
+        transform: scale(1.05); 
+    }  
+ 
+ 
+     .custom-image-widget:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+	    
         
         body, html {
             margin: 0;
@@ -283,7 +312,16 @@
 </head>
 <body>
 
+ <div class="custom-image-widget" style="position: relative; display: inline-block;">
+    <a href="https://elnegocio-digital.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">
+        <img class="custom-image" 
+             src="https://bucket.mlcdn.com/a/3336/3336910/images/138f14304ea21715dfae64ae5fe1d71b08c2d451.png" 
+             alt="English Translation"
+             style="display: block;">
+    </a>
+</div>
 
+	
     
 <!-- In the top-bar div (keep this as is) -->
 <div class="top-bar">
@@ -470,7 +508,34 @@ margin: 0px;
 
 
 
-
+    <div class="fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50" x-data="{ bannerOpen: true, videoOpen: false }" x-show="bannerOpen">
+        <div x-show="videoOpen" class="fixed inset-0 bg-black bg-opacity-75 z-[52] flex items-center justify-center p-4" @click.away="videoOpen = false">
+            <div class="relative w-full max-w-4xl bg-white rounded-lg overflow-hidden">
+                <button class="absolute top-2 right-2 z-50 text-white bg-black/50 hover:bg-black/75 rounded-full p-1" @click="videoOpen = false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    <span class="sr-only">Close video</span>
+                </button>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-[300px] md:h-[500px]"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#DF1783] text-sm p-3 md:rounded-lg shadow-lg flex justify-between">
+            <div class="text-white inline-flex items-center">
+                <img src="https://bucket.mlcdn.com/a/3336/3336910/images/2e79720ff0cbac4b6b430d701d053c11dfb48a79.gif" class="w-5 h-5 mr-2" alt="Bebell Digital Solutions Logo">
+                <button class="font-medium hover:underline text-white" @click="videoOpen = true">Watch Tutorial</button>
+                <span class="italic px-1.5">or</span>
+                <a class="font-medium hover:underline text-white flex items-center" href="https://github.com/cruip/cruip-tutorials/blob/main/vertical-timelines/index.html" target="_blank" rel="noreferrer">
+                    <span>Download</span>
+                    <svg class="fill-white ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="9"><path d="m1.649 8.514-.91-.915 5.514-5.523H2.027l.01-1.258h6.388v6.394H7.158l.01-4.226z" /></svg>
+                </a>
+            </div>
+            <button class="text-white hover:text-slate-200 pl-2 ml-3 border-l border-white/30" @click="bannerOpen = false">
+                <span class="sr-only">Close</span>
+                <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16"><path d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" /></svg>
+            </button>
+        </div>
+    </div>
 
  
 
