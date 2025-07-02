@@ -311,6 +311,91 @@
     padding: 20px !important;
 }
 
+
+
+ /* Banner styles */
+        .banner-container {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            z-index: 50;
+        }
+        @media (min-width: 768px) {
+            .banner-container {
+                bottom: 1.5rem;
+                right: 3rem;
+                width: auto;
+            }
+        }
+        .video-modal {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0,0,0,0.75);
+            z-index: 52;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .video-content {
+            position: relative;
+            width: 100%;
+            max-width: 56rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .close-video-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            z-index: 50;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 9999px;
+            padding: 0.25rem;
+        }
+        .close-video-btn:hover {
+            background-color: rgba(0,0,0,0.75);
+        }
+        .banner-content {
+            background-color: #DF1783;
+            color: white;
+            font-size: 0.875rem;
+            padding: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        @media (min-width: 768px) {
+            .banner-content {
+                border-radius: 0.5rem;
+            }
+        }
+        .banner-buttons {
+            display: inline-flex;
+            align-items: center;
+        }
+        .banner-btn {
+            font-weight: 500;
+            color: white;
+        }
+        .banner-btn:hover {
+            text-decoration: underline;
+        }
+        .close-banner-btn {
+            color: white;
+            padding-left: 0.5rem;
+            margin-left: 0.75rem;
+            border-left: 1px solid rgba(255,255,255,0.3);
+        }
+        .close-banner-btn:hover {
+            color: #e2e8f0;
+        }
+
+		
+
         
     </style>
 </head>
