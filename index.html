@@ -430,6 +430,14 @@ margin: 0px;
         .cta-secondary:hover {
             background-color: #f0f0f0;
         }
+	.stamp {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.1;
+            margin: 20px auto;
+        }	
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -441,7 +449,7 @@ margin: 0px;
         &lt;a href="https://example.com/feedback" class="cta-button cta-secondary"&gt;Leave Feedback&lt;/a&gt;
     &lt;/div&gt;	
     &lt;img src="https://cdn.shopify.com/s/files/1/0242/0175/6777/files/GIF_by_simongibson2000.gif?v=1749866561" alt="Description of image"&gt;
-    &lt;img src="https://bucket.mlcdn.com/a/3336/3336910/images/5b5c60c50f7e2cb00d7f10598ab253f4583bd258.png" alt="VibeCoding Studio"&gt;
+    &lt;img class="stamp" src="https://via.placeholder.com/300x300/cccccc/969696?text=Your+Stamp" alt="Decorative stamp"&gt;
     &lt;script&gt;console.log('Sample script executed!');&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</textarea>
@@ -766,6 +774,15 @@ margin: 0px;
         .cta-secondary:hover {
             background-color: #f0f0f0;
         }
+
+ .stamp {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.1;
+            margin: 20px auto;
+        }
             </style>
         </head>
         <body>
@@ -777,8 +794,7 @@ margin: 0px;
         <a href="https://example.com/feedback" class="cta-button cta-secondary">Leave Feedback</a>
     </div>
             <img src="https://cdn.shopify.com/s/files/1/0242/0175/6777/files/GIF_by_simongibson2000.gif?v=1749866561" alt="Description of image">
-	<img src="https://bucket.mlcdn.com/a/3336/3336910/images/5b5c60c50f7e2cb00d7f10598ab253f4583bd258.png" alt="VibeCoding Studio">
-
+    <img class="stamp" src="https://bucket.mlcdn.com/a/3336/3336910/images/5b5c60c50f7e2cb00d7f10598ab253f4583bd258.png" alt="VibeCoding Studio">  
 	    
         </body>
         </html>`;
@@ -791,10 +807,6 @@ margin: 0px;
         init();
     })();
 </script>
-
-
- 
-
 
  
 </body>
