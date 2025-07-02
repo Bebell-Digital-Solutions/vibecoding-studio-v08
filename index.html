@@ -278,11 +278,6 @@
     padding: 20px !important;
 }
 
-
-
-
-
-
         
     </style>
 </head>
@@ -390,7 +385,14 @@
             align-items: center;
             justify-content: center;
         }
-        h1 { color: #df1783; }
+  h1 { 
+color: #df1783; 
+margin-top: 80px;
+margin-bottom: 10px;
+}
+h2 {
+margin: 0px;
+}
         p { color: #333; }
         img {
             border-radius: 10px; /* Rounded corners */
@@ -402,6 +404,7 @@
 &lt;/head&gt;
 &lt;body&gt;
     &lt;h1&gt;Welcome to VibeCoding Studio! 🎉&lt;/h1&gt;
+	&lt;h2&gt;Code, Preview, Ship. All in One Place 🚀&lt;/h2&gt;	
     &lt;p&gt;This is a sample HTML document. Edit me as you please!&lt;/p&gt;
     &lt;img src="https://cdn.shopify.com/s/files/1/0242/0175/6777/files/GIF_by_simongibson2000.gif?v=1749866561" alt="Description of image"&gt;
     &lt;script&gt;console.log('Sample script executed!');&lt;/script&gt;
@@ -599,10 +602,7 @@
                 console.error('Viewer update error:', e);
             }
         }
-
-
-	    
-        
+  
         function handleTabIndent(e) {
             if (e.key === 'Tab') {
                 e.preventDefault();
@@ -613,10 +613,7 @@
             }
         }
 
-
-
-
-	    
+ 
         function downloadHTML() {
             try {
                 const blob = new Blob([elements.editor.value], { type: 'text/html' });
@@ -688,7 +685,14 @@ function initViewer() {
                     align-items: center;
                     justify-content: center;
                 }
-                h1 { color: #df1783; }
+  h1 { 
+color: #df1783; 
+margin-top: 80px;
+margin-bottom: 10px;
+}
+h2 {
+margin: 0px;
+}
                 p { color: #333; }
                 img {
                     border-radius: 10px; /* Rounded corners */
@@ -700,6 +704,7 @@ function initViewer() {
         </head>
         <body>
             <h1>Welcome to VibeCoding Studio! 🎉</h1>
+	    <h2>Code, Preview, Ship. All in One Place 🚀</h2>
             <p>This is a sample HTML document. Edit me as you please!</p>
             <img src="https://cdn.shopify.com/s/files/1/0242/0175/6777/files/GIF_by_simongibson2000.gif?v=1749866561" alt="Description of image">
         </body>
