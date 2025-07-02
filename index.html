@@ -400,13 +400,48 @@ margin: 0px;
             height: auto;
             margin: 20px 0; /* Add some margin around the image */
         }
+		        .cta-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cta-primary {
+            background-color: #df1783;
+            color: white;
+            border: 2px solid #df1783;
+        }
+        .cta-primary:hover {
+            background-color: #c11573;
+            border-color: #c11573;
+        }
+        .cta-secondary {
+            background-color: white;
+            color: #333;
+            border: 2px solid #333;
+        }
+        .cta-secondary:hover {
+            background-color: #f0f0f0;
+        }
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;h1&gt;Welcome to VibeCoding Studio! 🎉&lt;/h1&gt;
 	&lt;h2&gt;Code, Preview, Ship. All in One Place 🚀&lt;/h2&gt;	
     &lt;p&gt;This is a sample HTML document. Edit me as you please!&lt;/p&gt;
+    &lt;div class="cta-container"&gt;
+        &lt;a href="https://example.com" class="cta-button cta-primary"&gt;Visit Website&lt;/a&gt;
+        &lt;a href="https://example.com/feedback" class="cta-button cta-secondary"&gt;Leave Feedback&lt;/a&gt;
+    &lt;/div&gt;	
     &lt;img src="https://cdn.shopify.com/s/files/1/0242/0175/6777/files/GIF_by_simongibson2000.gif?v=1749866561" alt="Description of image"&gt;
+    &lt;img src="https://bucket.mlcdn.com/a/3336/3336910/images/5b5c60c50f7e2cb00d7f10598ab253f4583bd258.png" alt="VibeCoding Studio"&gt;
     &lt;script&gt;console.log('Sample script executed!');&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</textarea>
@@ -700,13 +735,51 @@ margin: 0px;
                     height: auto;
                     margin: 20px 0; /* Add some margin around the image */
                 }
+
+          .cta-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cta-primary {
+            background-color: #df1783;
+            color: white;
+            border: 2px solid #df1783;
+        }
+        .cta-primary:hover {
+            background-color: #c11573;
+            border-color: #c11573;
+        }
+        .cta-secondary {
+            background-color: white;
+            color: #333;
+            border: 2px solid #333;
+        }
+        .cta-secondary:hover {
+            background-color: #f0f0f0;
+        }
             </style>
         </head>
         <body>
             <h1>Welcome to VibeCoding Studio! 🎉</h1>
 	    <h2>Code, Preview, Ship. All in One Place 🚀</h2>
             <p>This is a sample HTML document. Edit me as you please!</p>
+	       <div class="cta-container">
+        <a href="https://example.com" class="cta-button cta-primary">Visit Website</a>
+        <a href="https://example.com/feedback" class="cta-button cta-secondary">Leave Feedback</a>
+    </div>
             <img src="https://cdn.shopify.com/s/files/1/0242/0175/6777/files/GIF_by_simongibson2000.gif?v=1749866561" alt="Description of image">
+	<img src="https://bucket.mlcdn.com/a/3336/3336910/images/5b5c60c50f7e2cb00d7f10598ab253f4583bd258.png" alt="VibeCoding Studio">
+
+	    
         </body>
         </html>`;
     
